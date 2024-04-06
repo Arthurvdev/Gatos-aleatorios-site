@@ -9,7 +9,10 @@ function link_img(dados) {
 }
 
 async function btn(){
-    const dados = await fetch(`https://api.thecatapi.com/v1/images/search?api_key=live_5xYND8fOJuz5vPIl4tJKN05ABZbtWEWd035ehl7ufAczofRwawk3ktMvou1zIUmW`).then(response => response.json())
+    const dados = await fetch(`https://api.thecatapi.com/v1/images/search?api_key=live_5xYND8fOJuz5vPIl4tJKN05ABZbtWEWd035ehl7ufAczofRwawk3ktMvou1zIUmW`).then(response => response.json());
+    //const teste_patos = await fetch(`https://valorant-api.com/v1/agents`).then(resposta2 => resposta2.json());
+    //console.log(teste_patos)
     console.log(dados)
     link_img(dados)
 }
+
