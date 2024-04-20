@@ -1,5 +1,8 @@
+var miau = document.getElementById('miau');
+
 function random(img){
     document.querySelector(".img_gatinho").src = img
+    miau.play();
 }
 
 function link_img(dados) {
