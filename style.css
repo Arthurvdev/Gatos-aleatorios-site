@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body{
+/*body{
     background-color: rgb(24, 23, 23);
     height: 100vh;
     width: 100vw;
@@ -71,6 +71,165 @@ button:hover{
 button:active{
     transform: scale(0.9);
     transition: 0.2s;
+}*/
+
+
+/*NOVA VERSÃO*/
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #271b25;
+}
+
+.header_bar.conteiner{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: fixed;
+    padding: 10px;
+}
+
+.header_bar{
+    color: white;
+    padding: 0px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(83, 62, 79);
+    width: 100vw;
+    text-align: center;
+}
+
+.section_container{
+    background-color: #271b25;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Space Grotesk", sans-serif;
+    z-index: 2;
+    
+}
+
+
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_img{
+    background-color: rgba(0, 0, 0, 0);
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container_button{
+    background-color: #271b25;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 10px;
+    z-index: 3;
+}
+
+button{
+    color: rgb(44, 42, 42);
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 20px;
+    background-color: rgb(83, 62, 79);
+    color: white;
+    border: none;
+    padding: 12px;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: rgb(56, 43, 54);
+    cursor: pointer;
+    color: rgb(165, 165, 165);
+    
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+img{
+    width: 60dvh;
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+    transition: 1.3s;
+
+}
+
+.imagem_gerada{
+    display: none;
+}
+
+/*CAT GIF*/
+
+.cat_gif{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    transition: 1.3s;
+    opacity: 100%;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*TELA DE CARREGAMENTO*/
+
+
+.carregamento{
+    position: absolute;
+    display: flex;
+    transition: 0.5s;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #271b25;
+    opacity: 0%;
+}
+
+.loader {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #ff00;
+    animation: loader .7s infinite linear;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 600px) {
