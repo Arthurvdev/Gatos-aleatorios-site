@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +7,59 @@
     <title>GATOS ALEATÓRIOS - Imagens e gifs aleatórios de gatos fofinhos</title>
     <meta name="description" content="Clique no botão para gerar uma nova imagem de gato fofinho. Sempre atualizado com as melhores imagens e gifs de gatos." />
 
-    
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/616/616430.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
         
     <meta name="google-adsense-account" content="ca-pub-2935925507413415">
     <meta name="google-site-verification" content="xixyftOoDJf_NUILAeBKgQ1Zy2PuTuu4XPwdW2E_acQ" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2935925507413415"
      crossorigin="anonymous"></script>
-
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+
     <audio id="miau" src="miau.ogg"></audio>
-    <div class="conteiner">
-        <h1>🐱 GATOS ALEATÓRIOS 🧶</h1>
-        <img class="img_gatinho" src="none" alt="">
-        <button onclick="btn()">🐈Gerar imagem🐈</button>
-        <h2>Clique no botão abaixo e gere uma imagem aleatória de gatinho!</h2>
-    </div>
-</body>
+
+    <header>
+
+        <div class="header_bar conteiner">
+            <div class="header_bar">
+                <h1> RANDOM CATS </h1>
+            </div>
+        </div>
+        
+    </header>
+
+    <section>
+
+        <div class="cat_gif">
+            <img src="https://media3.giphy.com/media/leuNkvf9pE6loEnjnb/giphy.gif" alt="gif de gato">
+        </div>
+
+        <div class="section_container">
+   
+            <div class="carregamento">
+                <div class="loader"></div>
+            </div>
+            
+            <div class="container">
+
+                <div class="container_img">
+                    <div class="imagem_gerada">
+                        <img class="img_gatinho" src="" alt="imagem de gato aleatória">
+                    </div>
+                </div>
+
+            </div> 
+        </div>   
+        
+        <div class="container_button">
+            <button onclick="btn()">Miau!</button>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2935925507413415"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
-     data-ad-client="ca-pub-2935925507413415"
-     data-ad-slot="2357508287"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</body>
 </html>
