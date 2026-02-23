@@ -3,63 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>GATOS ALEATÓRIOS - Imagens e gifs aleatórios de gatos fofinhos</title>
-    <meta name="description" content="Clique no botão para gerar uma nova imagem de gato fofinho. Sempre atualizado com as melhores imagens e gifs de gatos." />
+    
+    <!-- SEO Básico -->
+    <title>Gatos Aleatórios - Fotos e GIFs de Gatinhos Fofos</title>
+    <meta name="description" content="Gerador de fotos de gatos online. Clique e veja imagens de gatinhos aleatórios, GIFs engraçados e fotos fofas de felinos instantaneamente!">
+    <meta name="keywords" content="gatos aleatórios, fotos de gatos, gifs de gatos, gatinhos fofos, imagens de gatos">
+    <meta name="author" content="Seu Nome ou Marca">
+    <meta name="robots" content="index, follow">
 
+    <!-- Open Graph (Redes Sociais) -->
+    <meta property="og:title" content="GATOS ALEATÓRIOS - Imagens e Gifs">
+    <meta property="og:description" content="Clique no botão para gerar uma nova imagem de gato fofinho.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/616/616430.png">
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/616/616430.png" type="image/x-icon">
+    
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-        
-    <meta name="google-adsense-account" content="ca-pub-2935925507413415">
-    <meta name="google-site-verification" content="xixyftOoDJf_NUILAeBKgQ1Zy2PuTuu4XPwdW2E_acQ" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2935925507413415"
-     crossorigin="anonymous"></script>
-     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+         
+    <!-- JSON-LD (Dados estruturados para o Google entender que é um aplicativo de entretenimento) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gatos Aleatórios",
+      "description": "Um gerador automático de fotos e gifs de gatos fofos.",
+      "applicationCategory": "Entertainment"
+    }
+    </script>
 </head>
 <body>
 
-    <audio id="miau" src="miau.ogg"></audio>
+    <audio id="miau" src="miau.ogg" preload="auto"></audio>
 
     <header>
-
         <div class="header_bar conteiner">
             <div class="header_bar">
-                <h1> RANDOM CATS </h1>
+                <h1>RANDOM CATS</h1>
             </div>
         </div>
-        
     </header>
 
-    <section>
-
-        <div class="cat_gif">
-            <img src="https://media3.giphy.com/media/leuNkvf9pE6loEnjnb/giphy.gif" alt="gif de gato">
-        </div>
-
-        <div class="section_container">
-   
-            <div class="carregamento">
-                <div class="loader"></div>
+    <!-- Usei a tag <main> para indicar ao Google o conteúdo principal, não afeta o CSS -->
+    <main>
+        <section>
+            <!-- GIF de entrada -->
+            <div class="cat_gif">
+                <img src="https://media3.giphy.com/media/leuNkvf9pE6loEnjnb/giphy.gif" alt="Gatinho fofo de carregamento">
             </div>
-            
-            <div class="container">
 
-                <div class="container_img">
-                    <div class="imagem_gerada">
-                        <img class="img_gatinho" src="" alt="imagem de gato aleatória">
-                    </div>
+            <div class="section_container">
+                <!-- Tela de carregamento -->
+                <div class="carregamento" aria-live="polite">
+                    <div class="loader"></div>
                 </div>
+                
+                <div class="container">
+                    <article class="container_img">
+                        <div class="imagem_gerada">
+                            <!-- Alt dinâmico ajuda no SEO de imagens -->
+                            <img class="img_gatinho" src="" alt="Imagem de gato fofinho gerada aleatoriamente">
+                        </div>
+                    </article>
+                </div> 
+            </div>   
+            
+            <div class="container_button">
+                <!-- Adicionado aria-label para acessibilidade -->
+                <button onclick="btn()" aria-label="Gerar nova foto de gato">Miau!</button>
+            </div>
+        </section>
+    </main>
 
-            </div> 
-        </div>   
-        
-        <div class="container_button">
-            <button onclick="btn()">Miau!</button>
-        </div>
-    </section>
-    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
